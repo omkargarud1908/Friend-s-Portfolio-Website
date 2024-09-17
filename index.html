@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARTIK BHISE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin : 0;
+            padding: 0;
+        }
+
+        body{
+            background-color:black;
+            color:white
+        }
+        nav{
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(39, 38, 38);
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(237, 79, 79);
+            font-size: 1.2rem;
+        }
+        .left{
+            font-size: 1.8rem;
+            margin: 30px;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+        .firstSection > div{
+            width:30%;
+        }
+        .leftSection{
+            font-size: 3rem;
+        }
+        main a{
+            text-decoration: none;
+            color: white;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background-color: rgb(3, 3, 3);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            outline: 2px solid white;
+            outline-offset: -5px;
+            transition: 0.3s;
+        }
+        .leftSection .btn:hover{
+            outline-offset: 3px;
+        }
+        .rightSection img{
+            width:80%;
+        }
+        .red{
+            color: red;
+        }
+        
+        #element{
+            color:red;
+        }
+        .secoundSection{
+            max-width: 80vm;
+            margin: 3%;
+        }
+        .secoundSection h1{
+            font-size: 3rem;
+        }
+        /* ----------ABOUT---------- */
+#about {
+    padding: 50px 50px;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/* .tab-links:hover::after{
+width: 100%;
+} */
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: rgb(240, 92, 92);
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+        .text{
+            color:rgb(53, 50, 50)
+        }
+        main hr{
+            background-color: rgb(59, 56, 56);
+            border:0;
+            height: 1px;
+            margin: 40px  ;
+        }
+        #portfolio {
+    padding: 50px 50px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+
+.work {
+    border-radius: 10px;
+    position: center;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: #ff004f;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 16px;
+    transition: height 0.5s;
+    
+}
+
+.layer h2 {
+    margin-bottom: 30px;
+}
+
+.layer a {
+    margin-top: 30px;
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.75s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+        footer{
+            background-color: rgb(34, 33, 33);
+            height: 250px;
+        }
+        .footer{
+            display: flex;
+            padding:30px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        footer .footer-second ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer > div{
+            width:223px;
+        }
+        footer .follow-me{
+            text-align: center;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:gray;
+            padding:20px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="left"><span class ="red">K</span>artik's Portfolio</div>
+                <div class="right">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact me</a></li>
+                  </ul>  
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, My name is <span class ="red">Kartik</span>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="resume.pdf">Download Resume</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/kartik-bhise-b36b49208">Visit LinkedIn</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="logo.jpg">
+            </div>
+        </section><hr>
+        <section class="secoundSection">
+           <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><hr>
+                    <p>PASSIONATE VIDEO EDITOR WITH EXPERIRNCE IN ALL ASPECTS
+                        OF VIDEO PRODUCTION. POLISHED IN IMPLEMENTING VARIOUS
+                        EDITING TECHNIQUES TO ENHANCE VIDEO PRODUCTION
+                        COMMITTED TO EXECUTING EACH PROJECT WITH CLIENT
+                        SATISFACTION IN MIND. I'M ALWAYS EAGER TO LEARN AND I
+                        CONSTANTLY LOOK FOR OPPORTUNITIES THAT'LL HELP ME
+                        CREATE SOMETHING THAT IS FUNCTIONAL AND GENERATE
+                        BETTER OUTPUT FOR THE CLIENT.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PREMIERE PRO</span><br>Editing Videos </li>
+                            <li><span>AFTER EFFECTS</span><br>Creating 2D And 3D Animations</li>
+                            <li><span>BLENDER</span><br>Building 3D Models</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>EVF</li>
+                            <li><span>2021-2022</span><br>NEXOCIDE</li>
+                            <li><span>5 Year +</span><br>Video Editing Experience</li>
+                            <li><span>4 Year +</span><br>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2019</span><br>SSC</li>
+                            <li><span>2020-2021</span><br>HSC</li>
+                            <li><span>2021-Current</span><br>Bachelor Of Computer Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="VE.jpg" height="410px">
+                        <div class="layer">
+                            <h2>Video Editing</h2>
+                            <p></p>
+                            <a href="Contact.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="GD.jpg" height="410px">
+                        <div class="layer">
+                            <h2>Graphic Designing</h2>
+                            <a href="Contact.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="branding.png" height="410px">
+                        <div class="layer">
+                            <h2>Branding</h2>
+                            <a href="Contact.html" class="bnt">DM</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="Services.html" class="btn">See more</a>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <a href="projects/NORTHSTAR .mp4"><img src="projects/TN/Northstar.png" height="410px"></a>
+                    </div>
+                    <div class="work">
+                        <a href="projects/knull.mp4"><img src="projects/TN/Knull.png" height="410px"></a>
+                    </div>
+                    <div class="work">
+                        <a href="projects/e sleep.mp4"><img src="projects/TN/Esleep.png" height="410px"></a>
+                    </div>
+                </div>
+                <a href="Projects.html" class="btn">See more</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>KARTIK'S Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h5>Nevigations</h5><br>
+                <li><a href="index.html">> Home</a></li>
+                <li><a href="About.html">> About</a></li>
+                <li><a href="Services.html">> Services</a></li>
+                <li><a href="Projects.html">> Projects</a></li>
+                <li><a href="Contact.html">> Contact me</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h5>Social Media</h5><br>
+                    <li><a href="https://www.instagram.com/kartik.7._/">> instagram</a></li>
+                    <li><a href="https://vero.co/kartik_7">> Vero</a></li>
+                    <li><a href="https://www.linkedin.com/in/kartik-bhise-b36b49208">> LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCBHsMRTiwRpgn865fDf_qgQ">> YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="follow-me">
+            <h5>Follow Me On :</h5> 
+            <a href="https://www.instagram.com/kartik.7._/"><img src="Insta-png.png" height="35px"></a>
+            <a href="https://www.linkedin.com/in/kartik-bhise-b36b49208"><img src="LI.png" height="25px"></a>
+            <a href="https://www.youtube.com/channel/UCBHsMRTiwRpgn865fDf_qgQ"><img src="yt.png" height="30px"></a>
+            <a href="https://vero.co/kartik_7"><img src="vero.png" height="27px"></a>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169 2024 Kartik'sPortfalio | All Rights Reserved
+        </div>
+    </footer>
+   
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed('#element',{
+            strings: ['Logo Designer','Graphic Designer','Photo Editor', 'Video Editor.'],
+            typespeed:80,
+        });
+
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+    </script>   
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+         *{
+            margin : 0;
+            padding: 0;
+        }
+
+        body{
+            background-color:black;
+            color:white
+        }
+        .red{
+            color: red;
+        }
+        nav{
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(39, 38, 38);
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(237, 79, 79);
+            font-size: 1.2rem;
+        }
+        .left{
+            font-size: 1.8rem;
+            margin: 30px;
+        }
+
+        .FirstSection{
+            max-width: 80vm;
+            margin: 3%;
+            text-align: center;
+            
+        }
+        
+        .FirstSection h1{
+            font-size: 2rem;
+        }
+        .FirstSection h2{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+        main hr{
+            background-color: rgb(59, 56, 56);
+            border:0;
+            height: 1px;
+            margin: 40px  ;
+        }
+        main a{
+            text-decoration: none;
+            color: white;
+        }
+        footer{
+            background-color: rgb(34, 33, 33);
+            height: 250px;
+        }
+        .footer{
+            display: flex;
+            padding:30px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        footer .footer-second ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer > div{
+            width:223px;
+        }
+        footer .follow-me{
+            text-align: center;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:gray;
+            padding:12px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><span class ="red">K</span>artik's Portfolio</div>
+            <div class="right">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact me</a></li>
+              </ul>  
+            </div>
+        </nav>
+</header>
+
+<main>
+    <section class="FirstSection" >
+        <h1>Feel free to Contact us!</h1><hr>
+        <br> <div class="Contact-me"> 
+            <h2><img src="GM.png" height="25px" width="35px">. kartikbhise7@gmail.com</h2><br>
+            <h2><a href="https://www.linkedin.com/in/kartik-bhise-b36b49208"><img src="LI.png" height="25px">. LinkedIn</a></h2><br>
+            <h2><a href="https://www.instagram.com/kartik.7._/"><img src="Insta-png.png" height="35px">. Instagram</a></h2><hr>
+           
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="footer-first">
+            <h3>KARTIK'S Portfolio</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <h5>Nevigations</h5><br>
+            <li><a href="index.html">> Home</a></li>
+            <li><a href="About.html">> About</a></li>
+            <li><a href="Services.html">> Services</a></li>
+            <li><a href="Projects.html">> Projects</a></li>
+            <li><a href="Contact.html">> Contact me</a></li>
+            </ul>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <h5>Social Media</h5><br>
+                <li><a href="https://www.instagram.com/kartik.7._/">> instagram</a></li>
+                <li><a href="https://vero.co/kartik_7">> Vero</a></li>
+                <li><a href="https://www.linkedin.com/in/kartik-bhise-b36b49208">> LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/channel/UCBHsMRTiwRpgn865fDf_qgQ">> YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="follow-me">
+        <h5>Follow Me On :</h5> 
+        <a href="https://www.instagram.com/kartik.7._/"><img src="Insta-png.png" height="35px"></a>
+        <a href="https://www.linkedin.com/in/kartik-bhise-b36b49208"><img src="LI.png" height="25px"></a>
+        <a href="https://www.youtube.com/channel/UCBHsMRTiwRpgn865fDf_qgQ"><img src="yt.png" height="30px"></a>
+        <a href="https://vero.co/kartik_7"><img src="vero.png" height="27px"></a>
+    </div>
+    <div class="footer-rights">
+        Copyright &#169 2024 Kartik'sPortfalio | All Rights Reserved
+    </div>
+</footer>
+
+</body>
+</html>
